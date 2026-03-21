@@ -1,0 +1,224 @@
+/* ======================= CELULAR RESPONSIVO ======================= */
+@media (max-width: 768px) {
+
+    /* ---------- NAVIGATION ---------- */
+    nav {
+        justify-content: space-between;
+        padding: 15px 5%;
+        height: auto;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    /* Esconde menu desktop */
+    .nav-links {
+        display: none;
+    }
+
+    /* ---------- HAMBURGUER ---------- */
+
+    /* 🔥 ESSENCIAL: esconder no desktop (segurança) */
+    .hamburguer-menu {
+        display: flex;
+    }
+
+    .hamburguer-icon {
+        z-index: 1001;
+    }
+
+    /* 🔥 MENU ESTILO "PAINEL PROFISSIONAL" */
+    .menu-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 280px;
+
+        background: #0A0A0A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 30px;
+
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* 🔥 ABRE COM CLASSE CORRETA */
+    .menu-links.open {
+        right: 0;
+    }
+
+    .menu-links li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding-bottom: 10px;
+    }
+
+    .menu-links a {
+        font-size: 1.3rem;
+        display: block;
+        width: 100%;
+    }
+
+    /* ---------- PERFIL ---------- */
+    #perfil {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 15px;
+        gap: 30px;
+        height: auto;
+    }
+
+    #perfil .section_pic-container img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+    }
+
+    .section_text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section_text_p2 {
+        font-size: 1rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .midias-sociais {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    /* ---------- SOBRE ---------- */
+    .sobre-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 0;
+    }
+
+    .sobre-img img {
+        width: 90%;
+        height: auto;
+    }
+
+    .sobre-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .sobre-text {
+        max-width: 95%;
+        text-align: justify;
+    }
+
+    /* ---------- PROJETOS ---------- */
+    .projetos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto-card {
+        width: 95%;
+    }
+
+    .projeto-buttons {
+        flex-direction: column;
+    }
+
+    /* ---------- CONTATO ---------- */
+    .contato-form {
+        width: 95%;
+    }
+
+    .contato-email {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ---------- FIX GERAL ---------- */
+    body, html {
+        overflow-x: hidden;
+    }
+}
+
+.menu-links {
+    z-index: 9999; /* 🔥 força ficar acima de tudo */
+}
+
+.hamburguer-icon {
+    z-index: 10000;
+}
+
+@media (max-width: 768px) {
+    .hamburguer-menu {
+        display: flex !important;
+    }
+}
+
+/* ---------- AJUSTE FINO SOBRE MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+/* Centraliza TUDO de verdade */
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔥 IMAGEM MAIS CENTRALIZADA E MENOR */
+.sobre-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sobre-img img {
+    width: 90%;
+    max-width: 350px;
+
+    height: 320px;
+    object-position: top 15%;
+}
+
+    
+/* 🔥 CONTEÚDO ALINHADO COM OS CARDS */
+.sobre-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-text {
+    width: 100%;
+    padding: 0 20px;      /* 🔥 centraliza visualmente sem quebrar o texto */
+    margin: 0 auto;
+}
+
+.sobre-text p {
+    text-align: justify !important;  /* 🔥 FORÇA justificar */
+}
+}

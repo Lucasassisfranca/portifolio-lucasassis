@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Assis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ---------- NAVEGAÇÃO ---------- -->
+
+    <nav id="navegacao">
+  <div class="logo">Lucas <span>Assis</span></div>
+
+  <!-- Links desktop -->
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+
+  <!-- Menu hamburguer (mobile) -->
+  <div class="hamburguer-menu">
+    <div class="hamburguer-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="menu-links">
+      <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+      <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+      <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <!-- ---------- PERFIL / PARTE INICIAL ---------- -->
+
+    <section id="perfil">
+        <div class="section_pic-container">
+            <img src="assets/images/foto-lucas-perfil.png" alt="Lucas Assis Imagem de Perfil">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Olá, eu sou</p>
+            <h1 class="title">
+                Lucas <span>Assis</span>
+            </h1>
+            <p class="section_text_p2">Desenvolvedor Full Stack em formação!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('')">Download CV</button>
+                <button class="btn btn-color-1" onclick="window.location.href='#contato'">Contato</button>
+            </div>
+            <div class="midias-sociais">
+                <a href="https://github.com/Lucasassisfranca" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/Lucas-assis-franca" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------- SECTION SOBRE ---------- -->
+
+    <section id="sobre">
+        <p class="sobre-subtitle hidden">Conheça mais</p>
+        <h2 class="title hidden">Sobre <span>Mim</span></h2>
+
+        <div class="sobre-container hidden">
+
+            <!-- IMAGEM -->
+            <div class="sobre-img">
+                <img src="assets/images/lucas-foto8.jpg" alt="Foto sobre mim">
+            </div>
+
+            <!-- CONTEÚDO -->
+            <div class="sobre-content">
+
+                <!-- CARDS -->
+                <div class="sobre-cards">
+
+                    <div class="card">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h3>Objetivo</h3>
+
+                        <ul>
+                            <li>Atuar como Desenvolvedor Back-End</li>
+                            <li>Evoluir em Java e APIs</li>
+                            <li>Ganhar experiência profissional</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h3>Educação</h3>
+
+                        <ul>
+                            <li>Sistemas de Informação</li>
+                            <li>Bacharelado em Ciência e Tecnologia</li>
+                            <li>Inglês básico</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- TEXTO -->
+                <div class="sobre-text">
+                    <p>
+                        Sou estudante de Sistemas de Informação, atualmente no terceiro período, com foco em
+                        desenvolvimento Back-End.
+                        Estudo Java e venho aprimorando minhas habilidades na construção de aplicações e na lógica de
+                        programação.
+                    </p>
+
+                    <p>
+                        Também possuo conhecimentos em Front-End, utilizando HTML, CSS e JavaScript, e já desenvolvi
+                        projetos de web design para outras pessoas, criando interfaces modernas e funcionais.
+                    </p>
+
+                    <p>
+                        Busco minha primeira oportunidade na área de tecnologia, com o objetivo de adquirir experiência
+                        profissional, evoluir como desenvolvedor e contribuir com soluções eficientes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------- SECTION PROJETOS ---------- -->
+
+    <section id="projetos">
+        <p class="projetos-subtitle hidden">Meus Trabalhos</p>
+        <h2 class="title hidden">Proje<span>tos</span></h2>
+
+        <div class="projetos-container hidden">
+
+            <!-- CARD 1 -->
+            <div class="projeto-card">
+                <img src="assets/images/1.png" alt="Projeto 1">
+
+                <div class="projeto-info">
+                    <h3>Força Coletiva</h3>
+                    <p>Projeto social desenvolvido em parceria com um vereador, com foco em mobilização comunitária e divulgação de ações sociais.
+                    </p>
+
+                    <div class="projeto-buttons">
+                        <a href="https://lucasassisfranca.github.io/Projeto-Forca-Coletiva/" target="_blank" class="btn-outline">Ver Site</a>
+                        <a href="https://github.com/Lucasassisfranca/Projeto-Forca-Coletiva" target="_blank" class="btn-fill">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="projeto-card">
+                <img src="assets/images/2.png" alt="Projeto 2">
+
+                <div class="projeto-info">
+                    <h3>App Responsivo</h3>
+                    <p>Aplicativo Android criado para treinar HTML, CSS e técnicas de responsividade em diferentes telas.</p>
+                    <div class="projeto-buttons">
+                        <a href="https://lucasassisfranca.github.io/projeto-android/" target="_blank" class="btn-outline">Ver Site</a>
+                        <a href="https://github.com/Lucasassisfranca/projeto-android" target="_blank" class="btn-fill">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="projeto-card">
+                <img src="assets/images/3.png" alt="Projeto 3">
+
+                <div class="projeto-info">
+                    <h3>Simulação de Cafeteria</h3>
+                    <p>Projeto de simulação de cafeteria para treinar JavaScript, lógica de negócios e interações dinâmicas.</p>
+
+                    <div class="projeto-buttons">
+                        <a href="https://lucasassisfranca.github.io/projeto-cafeteria/" target="_blank" class="btn-outline">Ver Site</a>
+                        <a href="https://github.com/Lucasassisfranca/projeto-cafeteria" target="_blank" class="btn-fill">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTÃO FINAL -->
+        <div class="projetos-more">
+            <a href="https://github.com/Lucasassisfranca?tab=repositories" target="_blank" class="btn-fill">
+                Conheça Mais
+            </a>
+        </div>
+    </section>
+
+    <!-- ---------- SECTION CONTATO ---------- -->
+<section id="contato">
+  <p class="contato-subtitle hidden">Fale comigo</p>
+  <h2 class="title hidden">Conta<span>to</span></h2>
+
+  <div class="contato-container hidden">
+
+    <!-- FORMULÁRIO -->
+    <form class="contato-form" id="whatsapp-form">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="text" id="mensagem" placeholder="Sua mensagem" required>
+      <button type="submit" class="btn-submit">Enviar via WhatsApp</button>
+    </form>
+
+    <!-- E-MAIL -->
+    <div class="contato-email">
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:devlucasassis@gmail.com" target="_blank" class="email-link">devlucasassis@gmail.com</a>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ---------- JAVASCRIPT ---------- -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
